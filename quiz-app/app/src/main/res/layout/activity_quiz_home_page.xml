@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".QuizHomePage">
+
+    <TextView
+        android:id="@+id/textView_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/please_press_start_to_begin_quiz"
+        android:textSize="40sp"></TextView>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_answers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:clickable="true">
+        <!--android:layout-->
+        <!--android:checkedButton="@+id/radioButton"-->
+
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/a" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/b" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/c" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/d" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup_answers"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="27dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/start"
+        android:textColor="#ffffff" />
+
+    <Button
+
+        android:id="@+id/button_quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_next"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray"
+        android:text="@string/quit"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroup_answers"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="52dp"
+        android:text="@string/questions"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/score"
+        android:textAppearance="@color/abc_background_cache_hint_selector_material_dark"
+        android:textColor="#000000"
+        android:textSize="19sp" />
+
+
+    <TextView
+        android:id="@+id/textView_score"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textAppearance="@color/abc_background_cache_hint_selector_material_dark"
+        android:textColor="#000000"
+        android:textSize="19sp" />
+
+
+</RelativeLayout>
