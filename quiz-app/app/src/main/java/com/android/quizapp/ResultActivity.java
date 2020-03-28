@@ -31,6 +31,10 @@ public class ResultActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+    }
+
     private void setupUIListeners() {
         button_done.setOnClickListener(new View.OnClickListener() {
             @Override

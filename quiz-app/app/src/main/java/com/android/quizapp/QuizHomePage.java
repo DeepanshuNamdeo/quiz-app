@@ -46,6 +46,9 @@ public class QuizHomePage extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+    }
 
     private void initialiseUI() {
 
